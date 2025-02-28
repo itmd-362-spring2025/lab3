@@ -21,7 +21,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: Optima, "Segoe UI", system-ui, sans-serif; /* 1 */
+  font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -196,13 +196,61 @@ html {
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
+  font-family: Optima, "Segoe UI", system-ui;
 }
 
 label {
   display: block;
+  margin-bottom: 0.5em;
+}
+
+body {
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* ===== LAYOUT STYLES ====== */
+form {
+  max-width: 600px;
+  margin: 2em;
+  padding: 2em;
+  background-color:rgb(187, 184, 184);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+form li {
+  margin-bottom: 1.5em; 
+}
+
+h1 {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+label {
+  display: inline-block;
+}
+
+input[type="email"],
+input[type="submit"] {
+  border-radius: 8px;
+  border-color: rgb(221, 221, 221);
+}
+
+input[type="checkbox"], 
+[type="radio"] {
+  width: 1em;
+  height: 1em;
+}
 
 /* ===== STATE STYLES ======= */
